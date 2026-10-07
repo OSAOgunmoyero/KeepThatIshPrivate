@@ -1,28 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Oluwaseun Ogunmoyero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Oluwaseun Ogunmoyero" />
     <title>KeepThatIshPrivate 📙🗝️</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4d57daab60.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4d57daab60.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="main_background">
-        <div id="myNotes_section">
-            <h1>My Notes</h1>
-                <div id="noteList-container">
-                    
-                </div>
-            <div class="button-area">
-                <button type="button" class="newNoteBtn">
-                    <i class="fa-solid fa-pen-to-square"></i>
+      <div id="myNotes_section">
+        <h1>My Notes</h1>
+        <div id="noteList-container">
+          <div class="noteCard">
+            <div class="topOfCard">
+              <div class="titleSide">
+                <h2>Title</h2>
+              </div>
+              <div class="btnSide">
+                <button class="editBtn noteBtn">
+                  <i class="fa-solid fa-pencil"></i>
                 </button>
+                <button class="delBtn noteBtn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
             </div>
+            <div class="bottomOfCard">
+              <div class="noteContent">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Natus qui nulla repudiandae magnam et tempore maxime deserunt,
+                  explicabo recusandae nam, dolor autem ad vero doloribus ullam
+                  consectetur itaque? Incidunt, molestias?
+                </p>
+              </div>
+              <div class="noteDate">
+                <time datetime="2026-10-07">October 7th, 2026</time>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="noteForm_area">
+        <div class="button-area">
+          <button type="button" class="newNoteBtn">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
         </div>
+      </div>
+      <div id="noteForm_area"></div>
     </div>
-</body>
+
+    <div id="newNoteForm"></div>
+  </body>
 </html>
