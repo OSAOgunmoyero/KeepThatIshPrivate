@@ -16,6 +16,7 @@
       <div id="myNotes_section">
         <h1>My Notes</h1>
         <div id="noteList-container">
+          <!-- Area where the list of Saved Note Cards will be stored -->
           <div class="noteCard">
             <div class="topOfCard">
               <div class="titleSide">
@@ -45,13 +46,21 @@
             </div>
           </div>
         </div>
+          <!-- End of Area where the list of Saved Note Cards will be stored -->
         <div class="button-area">
           <button type="button" class="newNoteBtn">
             <i class="fa-solid fa-pen-to-square"></i>
           </button>
         </div>
       </div>
-      <div id="noteForm_area"></div>
+    
+      <div id="noteForm">
+        <label for="newNoteTitleInput">Title</label>
+        <input type="text" placeholder="Title" name="newNoteTitleInput" id="newNoteTitleInput">
+         <label for="newNoteNoteInput">Notes Section</label>
+        <textarea name="newNoteNoteInput" placeholder="Your notes go here" id="newNoteNoteInput" rows="30" cols="50"></textarea>
+      </div>
+      
     </div>
 
     <div id="newNoteForm"></div>
